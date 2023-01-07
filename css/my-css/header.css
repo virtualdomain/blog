@@ -1,0 +1,151 @@
+/* 头部css */
+header {
+    /* background: red; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0 10px 0 0;
+    display: flex;
+    /* 超出页面宽度修复 */
+    box-sizing: border-box;
+    /* 背景颜色 */
+    /* background: red; */
+    background-color: rgb(0, 0, 0);
+    z-index: 10;
+}
+
+header .content {
+    display: flex;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    /* 均匀排列 */
+    justify-content: space-between;
+    /* 对齐 */
+    align-items: center;
+}
+
+header .content .loge {
+    position: relative;
+    font-size: 1.5em;
+    color: aliceblue;
+    text-decoration: none;
+    /* ? */
+    font-weight: 600;
+    left: 20px;
+}
+
+/* 弹性布局解决并列问题 */
+header .content .un-loge {
+    position: relative;
+    /* 临时解决页面宽度扩展 */
+    right: 30px;
+    top: 0;
+    font-size: 1em;
+    margin: flex;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .content .un-loge .clickblock {
+    display: flex;
+    justify-content: center;
+    /* 行堆叠 */
+    flex-wrap: wrap;
+    /* 边缘属性 */
+    margin: 15px 0;
+}
+
+header .content .un-loge .clickblock li {
+    display: flex;
+    list-style: none;
+    margin: 5px 15px;
+}
+
+/* 颜色反转 */
+header .content .un-loge .clickblock li a {
+    height: 27px;
+    width: 48px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 27px;
+    color: aliceblue;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.4s ease;
+
+}
+
+header .content .un-loge .clickblock .block a:hover {
+    background: #fff;
+    color: black;
+}
+
+header .content .un-loge .search {
+    position: relative;
+    top: 15px;
+    width: 275px;
+    height: 35px;
+
+}
+
+header .content .un-loge .search input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    counter-reset: #fff;
+    background: transparent;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 0 10px 0 45px;
+}
+
+header .content .un-loge .search input::placeholder {
+    color: #fff;
+}
+
+header .content .un-loge .search .saving-search {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: #fff;
+    border-right: 1px solid #fff;
+    padding-right: 10px;
+}
+
+/* 响应式布局 */
+@media (max-width: 950px) {
+
+    /* div堆叠 */
+    header .content {
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 792px) {
+    header .content .un-loge .search {
+        top: 35px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    /* 此处不知如何重新上下堆叠排布 */
+    header .content {
+        align-items: none;
+        justify-content:none;
+        flex-wrap:wrap;
+    }
+
+    header .content .search {
+        width: 100%;
+    }
+}

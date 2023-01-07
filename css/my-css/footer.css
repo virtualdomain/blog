@@ -1,0 +1,127 @@
+/* 页脚css*/
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: fixed;
+    /* 超出页面宽度修复*/
+    box-sizing: border-box;
+    width: 100%;
+    /* 拟置顶 */
+    z-index: 10;
+    /* 背景颜色 */
+    background:rgb(0, 0, 0);
+}
+
+
+footer .content {
+    display: flex;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    /* 均匀排列 */
+    justify-content: space-between;
+    /* 对齐 */
+    align-items: center;
+}
+
+footer .content .loge{
+    position: relative;
+    font-size: 1.25em;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+    left: 20px;
+}
+footer .content .text{
+    width: (100%-10px);
+    display:flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+/* 时间变色 */
+footer .content .text span{
+    text-decoration: none;
+    opacity: 0.8;
+    transition: all 0.4s ease;
+    color: rgb(38, 0, 255);
+}
+
+footer .content .text span:hover{
+    opacity: 1;
+    color: rgb(255, 0, 76);
+
+}
+
+footer .content .link{
+display: flex;
+}
+footer .content .link a{
+    height: 40px;
+    width: 40px;
+    margin: 0 8px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+}
+/* 按钮变色 */
+footer .content .link a:nth-child(1){
+    background: #fff;
+}
+footer .content .link a:nth-child(1):hover{
+    background: #fff;
+    color:#fff;
+}
+footer .content .link a:nth-child(2){
+    background: #fff;
+}
+footer .content .link a:nth-child(2):hover{
+    background: #fff;
+    color:#fff;
+}
+footer .content .link a:nth-child(3){
+    background: #fff;
+}
+footer .content .link a:nth-child(3):hover{
+    background: #fff;
+    color:#fff;
+}
+footer .content .link a:nth-child(4){
+    background: #fff;
+}
+footer .content .link a:nth-child(4):hover{
+    background: #fff;
+    color:#fff;
+}
+footer .content .link a:nth-child(5){
+    background: #fff;
+}
+footer .content .link a:nth-child(5):hover{
+    background: #fff;
+    color:#fff;
+}
+footer .content .link a:nth-child(6){
+    background: #fff;
+}
+footer .content .link a:nth-child(6):hover{
+    background: #fff;
+    color:#fff;
+}
+footer .content .link a:nth-child(7){
+    background: #fff;
+}
+footer .content .link a:nth-child(7):hover{
+    background: #fff;
+    color:#fff;
+}
+footer .content .link a:nth-child(8){
+    background: #fff;
+}
+footer .content .link a:nth-child(8):hover{
+    background: #fff;
+    color:#fff;
+}

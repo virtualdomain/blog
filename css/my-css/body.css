@@ -1,0 +1,18 @@
+/* 底部黏附copy没学 */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Rubik";
+    margin: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+header,
+footer,
+main {
+    padding: 1rem;
+}
